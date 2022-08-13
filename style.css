@@ -1,0 +1,124 @@
+body {
+    height: 98vh;
+    font-family: "Lemon Milk", Arial, Helvetica, sans-serif;
+}
+
+#game-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 50px;
+    text-shadow: 2px 2px grey;
+}
+
+.player-prof {
+    width: 300px;
+    text-align: center;
+}
+
+p {
+    width: 100%;
+}
+
+#player-o {
+    position: absolute;
+    right: 10%;
+}
+
+#player-x {
+    position: absolute;
+    left: 10%;
+}
+
+.player-name {
+    font-size: 40px;
+    text-shadow: 2px 2px grey;
+}
+
+.player-points {
+    font-size: 200px;
+    text-shadow: 5px 5px grey;
+}
+
+#box-container {
+    display: grid;
+    grid-template-columns: repeat(3, 220px);
+    margin: 0;
+
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 50px;
+    color: black;
+    text-shadow: 1px 1px grey;
+
+    height: 200px;
+    width: 200px;
+
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    box-shadow: 3px 3px 0px 0px grey;
+
+    transition: 350ms;
+    transition-timing-function: ease-out;
+}
+
+.box:hover {
+    transform: translateY(-2px);
+    box-shadow: 5px 5px 2px 0px grey;
+    cursor: pointer;
+}
+
+button {
+    font-family: "Lemon Milk", Arial, Helvetica, sans-serif;
+    color: black;
+
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 8px;
+    transition: 350ms;
+}
+
+button:hover {
+    box-shadow: 2px 2px 3px 0px grey;
+    color: white;
+    background-color: black;
+    border: 2px solid black;
+    transform: translateY(-3px);
+    cursor: pointer
+}
+
+button:active {
+    transform: translateY(2px);
+}
+
+#reset-score {
+    background-color: black;
+    color: white;
+}
+
+#reset-score:hover {
+    background-color: white;
+    color: black;
+}
+
+#bottom-el {
+    display: flex;
+    flex-direction: row;
+    width: 660px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#message-el {
+    font-size: 20px;
+}
