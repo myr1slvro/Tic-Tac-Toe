@@ -1,3 +1,7 @@
+@font-face {
+    font-family: "Lemon Milk";
+    src: url("Lemon Milk/LEMONMILK-Regular.ttf") format("opentype");
+
 body {
     height: 98vh;
     font-family: "Lemon Milk", Arial, Helvetica, sans-serif;
